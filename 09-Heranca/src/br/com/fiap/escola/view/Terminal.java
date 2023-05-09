@@ -11,7 +11,7 @@ public class Terminal {
 		pessoa.setCodigo(89);
 		
 		//Instanciar um Aluno
-		Aluno aluno = new Aluno();
+		Aluno aluno = new Aluno(pessoa.getCodigo(), pessoa.getCpf(), pessoa.getNome(), pessoa.getEndereco(), 0, null);
 		aluno.setCodigo(1); 
 		aluno.setRm(123); 
 

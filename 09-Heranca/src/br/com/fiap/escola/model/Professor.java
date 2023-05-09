@@ -6,6 +6,12 @@ public class Professor extends Pessoa {
 	
 	private int cargaHoraria;
 	
+	public Professor(int codigo,String nome,String cpf,Endereco endereco, double salario, int cargaHoraria) {
+		super(codigo,nome,cpf,endereco);
+		this.salario= salario;
+		this.cargaHoraria = cargaHoraria;
+	}
+	
 	public void aplicarProva() {
 		
 	}
