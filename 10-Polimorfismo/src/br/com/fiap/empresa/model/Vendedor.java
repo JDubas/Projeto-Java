@@ -3,6 +3,8 @@ package br.com.fiap.empresa.model;
 public class Vendedor extends Funcionario {
 
 	double commissao, meta;
+	public Vendedor(){}
+	
 
 	public Vendedor(double commissao, double meta) {
 		super();

@@ -68,21 +68,21 @@ public class Funcionario {
 	}
 	
 	public String aumentarSalario(String nivel) {
-		if (nivel == "Junior"){
+		if (nivel.equalsIgnoreCase("junior")){
 			if (salario > 2000) {
 				return "Funcionario recebe mais que um Junior";
 			}else {
 			this.salario = 2000;
 				return "Aumento de salario";
 			}
-		}else if(nivel == "Pleno") {
+		}else if(nivel.equalsIgnoreCase("pleno")) {
 			if (salario > 5000) {
 				return "Funcionario recebe mais que um Pleno";
 			}else {
 			this.salario = 5000;
 				return "Aumento de salario";
 			}
-		}else if(nivel == "Senior") {
+		}else if(nivel.equalsIgnoreCase("senior")) {
 			if (salario > 8000) {
 				return "Funcionario recebe mais que um Senior";
 			}else {
@@ -91,6 +91,6 @@ public class Funcionario {
 			}
 		}
 			
-			return "OpÃ§Ã£o invalida";
+			return "Opção invalida";
 	}
 }
